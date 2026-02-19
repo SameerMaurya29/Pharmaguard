@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=STAR,Number=1,Type=String,Description="Star allele">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	10000	rsTestCYP2D6	A	G	.	PASS	GENE=CYP2D6;STAR=*1/*4

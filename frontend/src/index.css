@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Subtle noise overlay */
+.noise {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  opacity: 0.35;
+}
+
+.bg-aurora {
+  background:
+    radial-gradient(1000px 700px at 10% 20%, rgba(16, 185, 129, 0.18), transparent 60%),
+    radial-gradient(900px 650px at 90% 30%, rgba(34, 211, 238, 0.16), transparent 55%),
+    radial-gradient(900px 700px at 55% 80%, rgba(79, 70, 229, 0.22), transparent 60%),
+    linear-gradient(135deg, #0b1022 0%, #06131a 35%, #020617 100%);
+}
+
+/* Glass card */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.neon-edge {
+  box-shadow:
+    0 0 0 1px rgba(34, 211, 238, 0.18),
+    0 0 40px rgba(34, 211, 238, 0.08);
+}
+

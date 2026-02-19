@@ -1,0 +1,28 @@
+drug,gene,phenotype,risk_label,severity,clinical_recommendation
+CODEINE,CYP2D6,PM,Ineffective,high,"Avoid codeine due to reduced conversion to morphine; use a non-codeine analgesic alternative."
+CODEINE,CYP2D6,IM,Adjust Dosage,moderate,"Consider an alternative analgesic; if used, monitor for inadequate analgesia."
+CODEINE,CYP2D6,NM,Safe,none,"Standard approach; monitor for expected efficacy and adverse effects."
+CODEINE,CYP2D6,RM,Safe,low,"Standard approach; consider increased morphine formation in rapid metabolizers."
+CODEINE,CYP2D6,URM,Toxic,critical,"Avoid codeine due to risk of excessive morphine exposure and respiratory depression; use an alternative."
+
+WARFARIN,CYP2C9,PM,Adjust Dosage,high,"Increased bleeding risk; initiate with reduced dosing strategy and close INR monitoring."
+WARFARIN,CYP2C9,IM,Adjust Dosage,moderate,"May require lower maintenance dose; use genotype-informed dosing approach and close INR monitoring."
+WARFARIN,CYP2C9,NM,Safe,low,"Standard approach with routine INR monitoring."
+
+CLOPIDOGREL,CYP2C19,PM,Ineffective,high,"Reduced active metabolite formation; consider alternative antiplatelet therapy."
+CLOPIDOGREL,CYP2C19,IM,Ineffective,moderate,"Reduced activation; consider alternative antiplatelet therapy depending on clinical context."
+CLOPIDOGREL,CYP2C19,NM,Safe,low,"Standard approach."
+CLOPIDOGREL,CYP2C19,RM,Safe,low,"Standard approach; monitor for bleeding per usual care."
+CLOPIDOGREL,CYP2C19,URM,Safe,low,"Standard approach; monitor for bleeding per usual care."
+
+SIMVASTATIN,SLCO1B1,PM,Toxic,high,"Increased myopathy risk; consider alternative statin or lower dose strategy and monitor for muscle symptoms."
+SIMVASTATIN,SLCO1B1,IM,Adjust Dosage,moderate,"Moderately increased myopathy risk; consider dose reduction or alternative statin; monitor for muscle symptoms."
+SIMVASTATIN,SLCO1B1,NM,Safe,low,"Standard approach."
+
+AZATHIOPRINE,TPMT,PM,Toxic,critical,"High risk of severe myelosuppression; avoid or use substantially reduced dosing with intensive monitoring."
+AZATHIOPRINE,TPMT,IM,Adjust Dosage,high,"Increased myelosuppression risk; use reduced starting dose and monitor blood counts closely."
+AZATHIOPRINE,TPMT,NM,Safe,low,"Standard approach with routine monitoring."
+
+FLUOROURACIL,DPYD,PM,Toxic,critical,"High risk of severe toxicity; avoid fluoropyrimidines or consider alternative therapy."
+FLUOROURACIL,DPYD,IM,Adjust Dosage,high,"Increased toxicity risk; consider dose reduction and close toxicity monitoring."
+FLUOROURACIL,DPYD,NM,Safe,low,"Standard approach with routine toxicity monitoring."
