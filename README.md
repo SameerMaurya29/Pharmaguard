@@ -112,7 +112,9 @@ Frontend runs at `http://localhost:5173` and proxies `/api/*` to the backend.
   - `OPENAI_MODEL` (optional)
   - `CORS_ALLOW_ORIGINS` (comma-separated; include your Vercel URL)
 
-## Team
+## Team Members 
+Sameer Maurya , Vikrant , Shreyansh , Shreyash
 
-- Hackathon project template generated in Cursor
+### Project Live link
+https://pharmaguard121.netlify.app/
 
