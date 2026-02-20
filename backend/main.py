@@ -118,7 +118,7 @@ def _empty_report(patient_id: str, drug: str) -> Dict[str, Any]:
 
 app = FastAPI(title="PharmaGuard", version="1.0.0")
 
-cors_origins = [o.strip() for o in os.getenv("CORS_ALLOW_ORIGINS", "http://localhost:5173").split(",") if o.strip()]
+cors_origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=cors_origins,
